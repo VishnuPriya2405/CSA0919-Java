@@ -1,0 +1,20 @@
+public class Fibonacciseries {
+    public static void main(String[] args) {
+        int n = 10;
+        int firstTerm = 0;
+        int secondTerm = 1;
+        System.out.println("Fibonacci Series:");
+        for (int i = 1; i <= n; ++i) {
+            if (i == 1) {
+                System.out.print(firstTerm + ", ");
+            }
+            if (i == 2) {
+                System.out.print(secondTerm + ", ");
+            }
+            int nextTerm = firstTerm + secondTerm;
+            System.out.print(nextTerm + ", ");
+            firstTerm = secondTerm;
+            secondTerm = nextTerm;
+        }
+    }
+}
